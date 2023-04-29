@@ -1,5 +1,5 @@
 import sql from 'mssql'
-import { dbSettingsChampoton } from './acessDB.js';
+import { dbSettingsChampoton } from './accessDB.js';
 
 export async function getConnectionChampoton() {
   const pool = new sql.ConnectionPool(dbSettingsChampoton);
