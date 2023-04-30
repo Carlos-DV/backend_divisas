@@ -15,8 +15,9 @@ const createDbSettings = (ipBranch) => {
 }
 
 const dbSettingsChampoton = createDbSettings(process.env.IP_CHAMPOTON);
-
+const dbSettingsTrueba = createDbSettings(process.env.IP_TRUEBA);
 
   export {
-    dbSettingsChampoton
+    dbSettingsChampoton,
+    dbSettingsTrueba,
 }

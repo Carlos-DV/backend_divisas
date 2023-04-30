@@ -5,7 +5,7 @@ import { queryDB } from "./queriesDB.js";
 
 const checkQueryTipoCambio = async function(idSucursal, res, pool) { 
 
-    // console.log('ya estoy')
+    console.log(pool)
 
     const formatSucursalDate = idSucursal.split('-')
     const date_begin = formatSucursalDate[1]
@@ -25,10 +25,9 @@ const checkQueryTipoCambio = async function(idSucursal, res, pool) {
                                 )
                             }
     } catch (error) {
-        console.log(`Error: ${error}`)
-    } finally {
-        pool?.close();
+        res.json({error: "Error en la conexion con la base de datos, contacte a Sistemas"})
     }
+    
 }
 
 

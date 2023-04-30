@@ -1,4 +1,4 @@
-import { sql, getConnectionChampoton } from "../database/configDB.js"
+import { sql, getConnectionChampoton, getConnectionTrueba } from "../database/configDB.js"
 import checkQueryTipoCambio from "./checkQueryTipoCambio.js"
 
 
@@ -22,7 +22,7 @@ const connectionMap = {
     // 18: getConnectionProgreso,
     // 19: getConnectionCanek,
     // 20: getConnection50Sur,
-    // 23: getConnectionTrueba,
+    23: getConnectionTrueba,
     24: getConnectionChampoton,
   };
 
